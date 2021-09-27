@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Sen&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Exam</title>
+</head>
+<body>
+    
+    <img class="pokemon_logo" src="/img/pokemon_logo.svg" alt="logo">
+    
+    <form class="form" id="form">
+        <i class="far fa-check-square bigcheck" id="bigcheck"></i>
+    
+        <select class="pokem__genre genre_pokem" name="select" id="select">
+            <option value="All">All</option>
+        </select>
+        
+        <input class="pokem__search search_pokem" placeholder="Search..." id="search_pokem" type="text" name="seach_pokem">
+        
+        <select class="input pokem__filter">
+            <option class="pokem__option" value="a_z">Aa-Zz</option>
+            <option class="pokem__option" value="z_a">Zz-Aa</option>
+        </select>
+        
+        <button class="pokem__btn" type="submit">Button</button>
+    </form>
+    <ul class="pokem__list">
+        <li class="pokem__item">
+            <img class="pokem__img" src="" alt="img" width="150" height="200">
+            <h2 class="pokem__item-title"></h2>
+            <time class="pokem__list-time" datetime="2021-10-10"></time>
+            <p class=""></p>
+        </li>
+    </ul>
+    <aside class="aside" id="aside"><i class="fas fa-chevron-right" id="checking"></i></aside>
+    
+    
+    <script src="/pokemons.js"></script>
+    <script src="/utils.js"></script>
+    <script src="/model.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
